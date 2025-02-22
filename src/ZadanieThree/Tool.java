@@ -1,4 +1,4 @@
-package Tools;
+package ZadanieThree;
 
 public abstract class Tool implements Workable {
     protected final Workable workable;
@@ -6,14 +6,9 @@ public abstract class Tool implements Workable {
     protected Tool(Workable workable) {
         this.workable = workable;
     }
-    protected Tool(){
+
+    protected Tool() {
         workable = null;
     }
 
-    abstract String work();
-
-    @Override
-    public void hardWork() {
-        System.out.println(work());
-    }
 }

@@ -7,6 +7,8 @@ import java.util.Scanner;
 public class GetPath {
     public static Path setPath() {
         Scanner scanner = new Scanner(System.in);
-        return Paths.get(scanner.nextLine());
+        Path path = Paths.get(scanner.nextLine());
+        scanner.close();
+        return path;
     }
 }
